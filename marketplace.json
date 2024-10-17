@@ -1,0 +1,30 @@
+{
+  "label": "Google Cloud Cortex Framework for YouTube",
+  "category_label": "Models",
+  "branding": {
+    "image_uri": "https://marketplace-api.looker.com/block-icons/cortex_icon.png",
+    "tagline": "Common operational dashboards for data replicated from Youtube via DV360 into BigQuery leveraging Cortex Framework content."
+  },
+
+  "constants": {
+    "CONNECTION_NAME": {
+      "label": "Connection Name",
+      "value_constraint": "connection",
+      "description": "Value of the BigQuery CONNECTION_NAME allowing Looker to query the Cortex Framework REPORTING dataset."
+    },
+    "GCP_PROJECT_ID": {
+      "label": "GCP Project ID",
+      "description": "The GCP project ID where the deployed Cortex Framework REPORTING dataset for Oracle EBS resides in BigQuery."
+    },
+    "REPORTING_DATASET": {
+      "label": "Reporting Dataset Name",
+      "description": "The deployed Cortex Framework REPORTING dataset where the DV360 tables and views reside within the GCP BigQuery project."
+    }
+  },
+  "models": [
+    {
+      "name": "cortex-youtube-dv360",
+      "connection_constant": "CONNECTION_NAME"
+    }
+  ]
+}
