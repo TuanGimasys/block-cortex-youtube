@@ -1,17 +1,17 @@
 
 
 constant: CONNECTION_NAME {
-  value: "cortex"
+  value: "cortex_youtube"
   export: override_required
 }
 
 constant: GCP_PROJECT_ID {
-  value: "GCP Project ID"
+  value: "gms-rd-smartanalytics"
   export: override_required
 }
 
 constant: REPORTING_DATASET {
-  value: "Reporting Dataset Name"
+  value: "CORTEX_DV360_REPORTING"
   export: override_required
 }
 
